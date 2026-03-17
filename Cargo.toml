@@ -1,0 +1,15 @@
+[package]
+name = "can-isotp-interface"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+keywords = ["can", "can-isotp", "interface", "trait"]
+description = "ISO-TP transport traits shared across user-space and kernel backends"
+documentation = "https://docs.rs/can-isotp-interface"
+repository = "https://github.com/conroy-cheers/can-isotp-interface"
+readme = "README.md"
+exclude = [".envrc", "*.nix", "flake.lock"]
+
+[dependencies]
+
+[dev-dependencies]
