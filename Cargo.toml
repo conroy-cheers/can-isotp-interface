@@ -1,6 +1,6 @@
 [package]
 name = "can-isotp-interface"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 keywords = ["can", "can-isotp", "interface", "trait"]
@@ -10,6 +10,13 @@ repository = "https://github.com/conroy-cheers/can-isotp-interface"
 readme = "README.md"
 exclude = [".envrc", "*.nix", "flake.lock"]
 
+[features]
+default = []
+tokio = ["dep:tokio"]
+embassy = ["dep:embassy-time"]
+
 [dependencies]
+tokio = { version = "1.49", default-features = false, features = ["time"], optional = true }
+embassy-time = { version = "0.5", default-features = false, optional = true }
 
 [dev-dependencies]
