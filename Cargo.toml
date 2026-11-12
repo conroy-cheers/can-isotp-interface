@@ -2,6 +2,7 @@
 name = "can-isotp-interface"
 version = "0.2.0"
 edition = "2024"
+rust-version = "1.88"
 license = "MIT OR Apache-2.0"
 keywords = ["can", "can-isotp", "interface", "trait"]
 description = "ISO-TP transport traits shared across user-space and kernel backends"
@@ -20,3 +21,6 @@ tokio = { version = "1.49", default-features = false, features = ["time"], optio
 embassy-time = { version = "0.5", default-features = false, optional = true }
 
 [dev-dependencies]
+
+[package.metadata.docs.rs]
+all-features = true

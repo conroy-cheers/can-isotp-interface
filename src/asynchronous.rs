@@ -19,6 +19,7 @@ pub struct ReceivedPayload {
 
 /// A consumed rejection or a terminated transport.
 #[derive(Debug)]
+#[non_exhaustive]
 pub enum ReceiveError<E> {
     /// Consumed and discarded one payload, including for a zero-sized buffer.
     BufferTooSmall { needed: usize, got: usize },
@@ -32,6 +33,7 @@ pub enum ReceiveError<E> {
 
 /// Result of attempting transport acceptance, not remote acknowledgement.
 #[derive(Debug)]
+#[non_exhaustive]
 pub enum TransmitError<E> {
     Timeout,
     Rejected(E),
