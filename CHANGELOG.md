@@ -5,7 +5,7 @@ pre-1.0, so under semver a minor version bump is a breaking change. The
 [thincan migration guide](https://github.com/conroy-cheers/thincan/blob/master/docs/migration-0.2.md)
 covers the upgrade of the whole stack.
 
-## 0.2.0 (unreleased)
+## 0.2.0 (2026-11-12)
 
 ### Breaking
 
